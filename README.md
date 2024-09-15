@@ -30,7 +30,7 @@ Uma imagem geralmente é comprimida com o objetivo de minimizar o erro gerado pe
 ## Cronograma
 >| Tarefa          | Data de Finalização     | Número de Semanas| Progresso  |
 >|-----------------|------------|-----------|------------|
->| Revisão bibliográfica        | 17/09/2024 | 2 | ██████████ 100% |
+>| Revisão bibliográfica        | 17/09/2024 | 2 | █████████░ 90% |
 >| Desenvolvimento do encoder (1º versão)| 24/09/2024 | 1 | ░░░░░░░░░░ 0% |
 >| Método 1    | 08/10/2024 | 2 | ░░░░░░░░░░ 0%  |
 >| Entrega 2          | 08/10/2024 | 0 | ░░░░░░░░░░ 0% |
