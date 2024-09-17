@@ -14,9 +14,24 @@ oferecida no segundo semestre de 2024, na Unicamp, sob supervisão da Profa. Dra
 
 
 ## Descrição Resumida do Projeto
-Uma imagem geralmente é comprimida com o objetivo de minimizar o erro gerado pela reconstrução. O MSE (Mean Squared Error) é o método mais utilizado para medir a fidelidade da saída em termos de distorção [[3]](#3). 
-> 
-> Incluir nessa seção link para vídeo de apresentação da proposta do projeto (máximo 5 minutos).
+
+A compressão de dados, e em particular a compressão de imagens, é um componente fundamental para as novas gerações de comunicação móvel.
+Aplicações de natureza crítica, como a telemedicina e os carros autônomos, envolvem decisões que precisam ser tomadas imediatamente com base em uma transmissão de imagens contínua, proveniente de vários sensores simultâneamente.
+Para viabilizar essas aplicações, uma compressão a taxas extremamente baixas (menos de 0.1 bit por pixel ou bpp) se faz necessária.
+Embora nesse caso já não seja possível preservar o conteúdo estrutural das imagens, essas tarefas estão interessadas somente em certos atributos da imagem, os quais constituem o valor semântico embutido na imagem.
+
+A tarefa da compressão semântica, portanto, é a de projetar um codificador capaz de extrair essa informação semântica e um decodificador capaz de gerar uma imagem reconstruída com o mesmo conteúdo essencial.
+O projeto de tais decodificadores pode ser desenvolvido por meio de modelos generativos.
+
+Em [[1]](#1), os autores introduziram uma proposta inicial da utilização de GANs para compressão semântica, tanto utilizando segmentação semântica para sintetizar regiões de interesse (por exemplo, para sintetizar fundos de videochamadas) quanto comprimindo apenas uma sequência de bits (por exemplo, para sintetizar detalhes de partes da imagem).
+O trabalho de [[2]](#2) propôs uma arquitetura chamada DSSLIC, também utilizando GANs, que combina a utilização dos mapas semânticos com os resíduos da própria compressão como entradas da rede decodificadora.
+Já em [[3]](#3), é utilizado um modelo de difusão latente (LDM), codificando um colormap quantizado da imagem original para auxiliar na reconstrução a partir do vetor semântico extraído.
+
+Este projeto tem como objetivo realizar um estudo comparativo de modelos de compressão semântica baseados nos mencionados acima.
+
+[Link para o vídeo de apresentação](https://drive.google.com/file/d/1sVEZiwOKVfSp3zXrToVWvKQgVfOdiWUl/view?usp=sharing)
+
+[Link para a apresentação de slides](https://drive.google.com/file/d/1XXuT1HYH33gW0SCd8A1U8ulIU7ICBDPW/view?usp=sharing)
 
 ## Metodologia Proposta
 > Para a primeira entrega, a metodologia proposta deve esclarecer:
