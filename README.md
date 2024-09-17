@@ -56,14 +56,6 @@ Para as GANs, também serão usadas métricas adversárias (e.g. Feature Matchin
 
 Em uma avaliação de ordem qualitativa para teste inicial do conceito também serão consideradas imagens da base de dados da Kodak, comumente utilizada para benchmarks de compressão de imagens.
 
-> Para a primeira entrega, a metodologia proposta deve esclarecer:
-> * Qual(is) base(s) de dado(s) o projeto pretende utilizar, justificando a(s) escolha(s) realizadas.
-> * Quais abordagens de modelagem generativa o grupo já enxerga como interessantes de serem estudadas.
-> * Artigos de referência já identificados e que serão estudados ou usados como parte do planejamento do projeto
-> * Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
-> * Resultados esperados
-> * Proposta de avaliação dos resultados de síntese
-
 ## Cronograma
 >| Tarefa          | Data de Finalização     | Número de Semanas| Progresso  |
 >|-----------------|------------|-----------|------------|
@@ -78,7 +70,6 @@ Em uma avaliação de ordem qualitativa para teste inicial do conceito também s
 >| Montar entrega 3   | 25/11/2024 | 0 | ░░░░░░░░░░ 0%  |
 
 ## Referências Bibliográficas
-> Apontar nesta seção as referências bibliográficas adotadas no projeto.
 
 <a id="1">[1]</a> E. Agustsson, M. Tschannen, F. Mentzer, R. Timofte, and L. Van Gool, “Generative adversarial networks for extreme learned image compression,” in Proc. IEEE/CVF Int. Conf. Comput. Vis. (ICCV), Oct. 2019, pp. 221–231.
 
