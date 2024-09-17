@@ -34,6 +34,28 @@ Este projeto tem como objetivo realizar um estudo comparativo de modelos de comp
 [Link para a apresentação de slides](https://drive.google.com/file/d/1XXuT1HYH33gW0SCd8A1U8ulIU7ICBDPW/view?usp=sharing)
 
 ## Metodologia Proposta
+
+Diante do contexto apresentado, a proposta deste projeto será implementar diferentes abordagens de redes generativas e compará-las de maneira padronizada com um modelo de referência de compressão tradicional e entre si.
+
+Para isso, será primeiramente analisado um modelo simples baseado em GAN sem rede de segmentação, como em [[1]](#1), um modelo mais sofisticado baseado em GANs condicionais (cGANs) para síntese de regiões de interesse da imagem original, e um modelo baseado em LDM como em [[3]](#3).
+A extração de informação semântica se dará por uma modificação da arquitetura ResNet de identificação de objetos em cenas, como foi feito pelo CLIP [[4]](#4) e pela PSPNet [[5]](#5).
+Além disso, como modelo de referência, será usado um codec de compressão BPG.
+
+Os conjuntos de dados utilizados para treinamento, tanto do codificador quanto do modelo generativo, foram escolhidos com base na presença de rótulos semânticos identificando os objetos presentes em cada imagem.
+
+Em particular, foram identificados as seguintes bases: 
+* ADE20K [[6]](#6), com cerca de 25 mil imagens de cenas com mais de 3 mil categorias de objetos, representados por imagens segmentadas com códigos de cores;
+* Cityscapes [[7]](#7), com cerca de 5 mil imagens urbanas, com objetos rotulados entre 30 possíveis classes; e
+* Coco-stuff [[8]](#8), com mais de 164 mil imagens de cenas diversas, com 182 classes de objetos identificados.
+
+Finalmente, a avaliação se dará de maneira quantitativa através de dois grupos de métricas.
+Isso se deve ao compromisso matemático existente entre a **distorção** observada entre valores de pixels individuais e a **percepção** da qualidade da imagem [[9]](#9).
+Para medir a distorção entre as imagens reconstruídas e as imagens originais, serão usadas as métricas usuais de PSNR (peak signal-to-noise ratio) e MS-SSIM (multi-scale structural similarity).
+Já no caso da percepção, será comparada a representação semântica obtida nas imagens reconstruídas pelo reuso do codificador com a representação semântica da imagem original, através da relação IoU (intersection-over-union) dos vetores latentes encontrados.
+Para as GANs, também serão usadas métricas adversárias (e.g. Feature Matching), e para o modelo de difusão, será utilizada a rede MUSIQ [[10]](#9), que computa uma métrica de qualidade da imagem reconstruída.
+
+Em uma avaliação de ordem qualitativa para teste inicial do conceito também serão consideradas imagens da base de dados da Kodak, comumente utilizada para benchmarks de compressão de imagens.
+
 > Para a primeira entrega, a metodologia proposta deve esclarecer:
 > * Qual(is) base(s) de dado(s) o projeto pretende utilizar, justificando a(s) escolha(s) realizadas.
 > * Quais abordagens de modelagem generativa o grupo já enxerga como interessantes de serem estudadas.
