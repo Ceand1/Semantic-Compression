@@ -9,8 +9,8 @@ oferecida no segundo semestre de 2024, na Unicamp, sob supervisão da Profa. Dra
 
 > |Nome  | RA | Especialização|
 > |--|--|--|
-> | Eduardo Nunes Velloso  | 290885  | Eng. Eletricista|
-> | Antonio César de Andrade Júnior  | 245628  | Eng. de Computação|
+> | Antonio César de Andrade Júnior  | 245628  | Eng. de Computação |
+> | Eduardo Nunes Velloso  | 290885  | Eng. Elétrica |
 
 
 ## Descrição Resumida do Projeto
