@@ -67,13 +67,13 @@ Em uma avaliação de ordem qualitativa para teste inicial do conceito também s
 ## Cronograma
 >| Tarefa          | Data de Finalização     | Número de Semanas| Progresso  |
 >|-----------------|------------|-----------|------------|
->| Revisão bibliográfica        | 17/09/2024 | 2 | ██████████ 100% |
->| Desenvolvimento do encoder (1º versão)| 24/09/2024 | 1 | ░░░░░░░░░░ 0% |
->| Método 1    | 08/10/2024 | 2 | ░░░░░░░░░░ 0%  |
+>| Revisão bibliográfica        | 17/09/2024 | 2 | █████████░ 90% |
+>| Desenvolvimento BPG/VVC | 24/09/2024 | 1 | ░░░░░░░░░░ 0% |
+>| Desenvolvimento GAN | 08/10/2024 | 2 | ░░░░░░░░░░ 0%  
 >| Entrega 2          | 08/10/2024 | 0 | ░░░░░░░░░░ 0% |
->| Desenvolvimento do encoder (Versão Final)| 15/10/2024 | 1 | ░░░░░░░░░░ 0% |
->| Método 2    | 29/10/2024 | 2 | ░░░░░░░░░░ 0%  |
->| Método 3    | 12/11/2024 | 2 | ░░░░░░░░░░ 0%  |
+>| Rede de segmentação semântica | 15/10/2024 | 1 | ░░░░░░░░░░ 0% |
+>| Desenvolvimento cGAN    | 29/10/2024 | 2 | ░░░░░░░░░░ 0%  |
+>| Desenvolvimento Difusão    | 12/11/2024 | 2 | ░░░░░░░░░░ 0%  |
 >| Análise dos resultados    | 25/11/2024 | 2 | ░░░░░░░░░░ 0%  |
 >| Montar entrega 3   | 25/11/2024 | 0 | ░░░░░░░░░░ 0%  |
 
